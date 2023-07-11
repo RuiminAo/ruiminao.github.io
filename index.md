@@ -4,7 +4,7 @@ title: "Welcome"
 ---
 <img align="right" width="300" height="237" padding="10px" style="margin:50px 50px" src="/MyPhoto.jpg"> \
 \
-I am a Economics PhD student at [UCL](https://www.ucl.ac.uk/economics/ucl-department-economics) and [IFS](https://ifs.org.uk/).  \
+I am a PhD student in Economics at [UCL](https://www.ucl.ac.uk/economics/ucl-department-economics) and [IFS](https://ifs.org.uk/).  \
 \
 \
 \
