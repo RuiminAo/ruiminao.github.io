@@ -8,5 +8,7 @@ I am a PhD student in Economics at [UCL](https://www.ucl.ac.uk/economics/ucl-dep
 \
 \
 \
-My research interests are health, development and behavioural economics. I am particular interested in the health outcomes from individual behaviours.
+My research interests are health, development and behavioural economics. I am particular interested in the health outcomes from individual behaviours.  \
+\
+You can find my CV [here](/cv_052026.pdf).
 
