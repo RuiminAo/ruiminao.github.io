@@ -1,0 +1,219 @@
+---
+layout: null
+permalink: /slides/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Slides</title>
+  <style>
+    :root { --fg:#222; --muted:#777; --bg:#fafafa; --card:#fff; --line:#e5e5e5; --accent:#2a6df4; }
+    * { box-sizing: border-box; }
+    body {
+      margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      color:var(--fg); background:var(--bg);
+      min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .wrap { width:100%; max-width:680px; }
+    .card {
+      background:var(--card); border:1px solid var(--line); border-radius:12px;
+      padding:28px; box-shadow:0 1px 3px rgba(0,0,0,.05);
+    }
+    h1 { font-size:1.3rem; margin:0 0 4px; }
+    p.sub { color:var(--muted); margin:0 0 20px; font-size:.92rem; }
+    form { display:flex; gap:10px; }
+    input[type=password] {
+      flex:1; padding:11px 13px; font-size:1rem; border:1px solid var(--line);
+      border-radius:8px; outline:none;
+    }
+    input[type=password]:focus { border-color:var(--accent); }
+    button {
+      padding:11px 18px; font-size:1rem; border:0; border-radius:8px;
+      background:var(--accent); color:#fff; cursor:pointer;
+    }
+    button:disabled { opacity:.6; cursor:default; }
+    .msg { margin-top:14px; font-size:.9rem; min-height:1.2em; }
+    .msg.err { color:#c0392b; }
+    .msg.ok { color:var(--muted); }
+    ul.files { list-style:none; padding:0; margin:8px 0 0; }
+    ul.files li {
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:13px 4px; border-top:1px solid var(--line);
+    }
+    ul.files li:first-child { border-top:0; }
+    .ftitle { font-weight:600; }
+    .fmeta { color:var(--muted); font-size:.8rem; }
+    .actions a {
+      text-decoration:none; color:var(--accent); font-size:.9rem; margin-left:14px; cursor:pointer;
+    }
+    .hidden { display:none; }
+    .foot { text-align:center; margin-top:16px; }
+    .foot a { color:var(--muted); font-size:.82rem; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Slides</h1>
+      <p class="sub">Enter the password to view.</p>
+
+      <form id="unlock">
+        <input id="pw" type="password" autocomplete="current-password"
+               placeholder="Password" autofocus>
+        <button id="go" type="submit">Unlock</button>
+      </form>
+      <div id="msg" class="msg"></div>
+
+      <ul id="files" class="files hidden"></ul>
+    </div>
+    <div class="foot"><a href="{{ '/' | relative_url }}">&larr; back to site</a></div>
+  </div>
+
+  <script>
+  (function () {
+    const MANIFEST_URL = "{{ '/assets/slides/manifest.json' | relative_url }}";
+    const ENC_BASE = "{{ '/assets/slides/' | relative_url }}";
+
+    const form = document.getElementById("unlock");
+    const pwEl = document.getElementById("pw");
+    const goEl = document.getElementById("go");
+    const msgEl = document.getElementById("msg");
+    const filesEl = document.getElementById("files");
+
+    const b64ToBytes = (b64) =>
+      Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
+
+    function setMsg(text, cls) {
+      msgEl.textContent = text || "";
+      msgEl.className = "msg" + (cls ? " " + cls : "");
+    }
+
+    async function deriveKey(password, salt, iterations) {
+      const baseKey = await crypto.subtle.importKey(
+        "raw", new TextEncoder().encode(password), "PBKDF2", false, ["deriveKey"]
+      );
+      return crypto.subtle.deriveKey(
+        { name: "PBKDF2", salt, iterations, hash: "SHA-256" },
+        baseKey,
+        { name: "AES-GCM", length: 256 },
+        false,
+        ["decrypt"]
+      );
+    }
+
+    async function decrypt(key, iv, data) {
+      return crypto.subtle.decrypt({ name: "AES-GCM", iv }, key, data);
+    }
+
+    function fmtSize(bytes) {
+      if (!bytes && bytes !== 0) return "";
+      const u = ["B", "KB", "MB", "GB"];
+      let i = 0, n = bytes;
+      while (n >= 1024 && i < u.length - 1) { n /= 1024; i++; }
+      return n.toFixed(n >= 10 || i === 0 ? 0 : 1) + " " + u[i];
+    }
+
+    let KEY = null;          // derived AES key (kept only in memory)
+    const cache = {};        // enc filename -> object URL (decrypted blob)
+
+    async function getBlobUrl(file) {
+      if (cache[file.enc]) return cache[file.enc];
+      const resp = await fetch(ENC_BASE + file.enc, { cache: "no-store" });
+      if (!resp.ok) throw new Error("Could not fetch " + file.enc);
+      const ct = await resp.arrayBuffer();
+      const plain = await decrypt(KEY, b64ToBytes(file.iv), ct);
+      const url = URL.createObjectURL(new Blob([plain], { type: file.type }));
+      cache[file.enc] = url;
+      return url;
+    }
+
+    function render(files) {
+      filesEl.innerHTML = "";
+      files.forEach((file) => {
+        const li = document.createElement("li");
+
+        const left = document.createElement("div");
+        left.innerHTML =
+          '<div class="ftitle"></div><div class="fmeta"></div>';
+        left.querySelector(".ftitle").textContent = file.title || file.name;
+        left.querySelector(".fmeta").textContent =
+          [file.name, fmtSize(file.size)].filter(Boolean).join(" · ");
+
+        const actions = document.createElement("div");
+        actions.className = "actions";
+
+        const view = document.createElement("a");
+        view.textContent = "View";
+        view.onclick = async () => {
+          setMsg("Decrypting " + file.name + "…", "ok");
+          try {
+            const url = await getBlobUrl(file);
+            window.open(url, "_blank");
+            setMsg("", "ok");
+          } catch (e) { setMsg("Failed to open: " + e.message, "err"); }
+        };
+
+        const dl = document.createElement("a");
+        dl.textContent = "Download";
+        dl.onclick = async () => {
+          setMsg("Decrypting " + file.name + "…", "ok");
+          try {
+            const url = await getBlobUrl(file);
+            const a = document.createElement("a");
+            a.href = url; a.download = file.name; a.click();
+            setMsg("", "ok");
+          } catch (e) { setMsg("Failed: " + e.message, "err"); }
+        };
+
+        actions.append(view, dl);
+        li.append(left, actions);
+        filesEl.appendChild(li);
+      });
+      filesEl.classList.remove("hidden");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const password = pwEl.value;
+      if (!password) return;
+      goEl.disabled = true;
+      setMsg("Unlocking…", "ok");
+      try {
+        const manifest = await (await fetch(MANIFEST_URL, { cache: "no-store" })).json();
+        const salt = b64ToBytes(manifest.kdf.salt);
+        KEY = await deriveKey(password, salt, manifest.kdf.iterations);
+
+        // Decrypting the index doubles as the password check:
+        // a wrong password makes AES-GCM authentication throw.
+        let indexPlain;
+        try {
+          indexPlain = await decrypt(
+            KEY, b64ToBytes(manifest.index.iv), b64ToBytes(manifest.index.data)
+          );
+        } catch (_) {
+          KEY = null;
+          setMsg("Incorrect password.", "err");
+          goEl.disabled = false;
+          pwEl.select();
+          return;
+        }
+
+        const index = JSON.parse(new TextDecoder().decode(indexPlain));
+        form.classList.add("hidden");
+        setMsg("");
+        document.querySelector(".sub").textContent =
+          index.files.length + " file(s) unlocked.";
+        render(index.files);
+      } catch (err) {
+        setMsg("Could not load slides: " + err.message, "err");
+        goEl.disabled = false;
+      }
+    });
+  })();
+  </script>
+</body>
+</html>
