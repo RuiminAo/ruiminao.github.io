@@ -11,4 +11,6 @@ I am a PhD student in Economics at [UCL](https://www.ucl.ac.uk/economics/ucl-dep
 My research interests are health, development and behavioural economics. I am particular interested in the health outcomes from individual behaviours.  \
 \
 You can find my CV [here](/cv_082026.pdf).
+\
+Contact me at: <a href="mailto:r.ao@ucl.ac.uk">r.ao[at]ucl.ac.uk</a>
 
