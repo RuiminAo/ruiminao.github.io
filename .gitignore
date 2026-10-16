@@ -9,3 +9,4 @@ _site
 # Plaintext slide originals — NEVER commit these. Only the encrypted
 # output in assets/slides/ gets committed.
 _slides_src/
+vendor/

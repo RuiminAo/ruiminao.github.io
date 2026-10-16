@@ -28,17 +28,14 @@
 {% endif %}
 
 <header>
-  <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
   {% include menu.html menu=pages %}
 </header>
 
 {{ content }}
 
-{% if site.external %}
 <footer>
-  <div>{{ site.description | default: site.title }}</div>
-  {% include menu.html menu=site.external %}
+  <div>{{ site.author | escape }}</div>
+  {% if site.external %}{% include menu.html menu=site.external %}{% endif %}
 </footer>
-{% endif %}
 
 </html>

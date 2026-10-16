@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Welcome"
+title: "Ruimin Ao"
 ---
 <div class="about">
 <div class="about-text" markdown="1">
@@ -10,10 +10,11 @@ I am a PhD student in Economics at [University College London](https://www.ucl.a
 My research interests are health, development and behavioural economics. I am particularly interested in the health outcomes of individual behaviours.
 
 In my **job market paper**, I study the dynamic choice between smoking and vaping under addiction. I build and estimate a dynamic discrete--continuous choice model in which households make participation and quantity choices on smoking and vaping. Households build separate smoking and vaping addictions through consumption, and these addictions affect both participation and the marginal utility of consumption. Latent types capture unobserved initial addiction stocks. Estimation uses a surrogate neural network that takes both the state variables and the parameters as inputs and is trained with unsupervised machine learning. Using U.S. household consumption data, I show that addiction plays a major role in shaping consumer price responses:
-
 - Own-price responses attenuate with addiction. Cross-price responses vary with the level of addiction and with the product the household is addicted to.
 - Both the participation and the quantity margin contribute to the total changes.
 - Removing e-cigarettes from the market pushes existing smokers back to smoking.
+
+<br>
 
 You can find my CV [here](/cv_102026.pdf).
 
