@@ -2,7 +2,8 @@
 layout: page
 title: "Welcome"
 ---
-<img class="profile" src="/Main_JPG_High_SQ.jpg" alt="Photo of Ruimin Ao">
+<div class="about">
+<div class="about-text" markdown="1">
 
 I am a PhD student in Economics at [UCL](https://www.ucl.ac.uk/economics/ucl-department-economics) and [IFS](https://ifs.org.uk/).
 
@@ -17,3 +18,7 @@ In my **job market paper**, I study the dynamic choice between smoking and vapin
 You can find my CV [here](/cv_102026.pdf).
 
 Contact me at <a href="mailto:r.ao@ucl.ac.uk">r.ao[at]ucl.ac.uk</a>.
+
+</div>
+<img class="profile" src="/Main_JPG_High_SQ.jpg" alt="Photo of Ruimin Ao">
+</div>
