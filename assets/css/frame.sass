@@ -1,6 +1,9 @@
 ---
 ---
 
+$font-size: calc(0.95rem + 0.25vw)
+$line-height: 1.65
+
 @import index, font, basic, layout, classes
 
 html
@@ -23,3 +26,40 @@ body > header, body > footer
     box-shadow: 0 0 0 1px lighten($dark, 8%)
   html, body > header, body > footer
     background: $dark
+
+// Page content spacing
+
+article p
+  margin: 0 0 1.1em
+
+article ul, article ol
+  margin: .5em 0 1.25em
+  padding-left: 1.4em
+
+article li
+  margin: .4em 0
+
+// Profile photo on the About page
+
+.profile
+  float: right
+  width: 220px
+  max-width: 40%
+  margin: .25em 0 1em 1.75em
+  border-radius: 4px
+
+@media (max-width: 32em)
+  .profile
+    float: none
+    display: block
+    width: 60%
+    max-width: 60%
+    margin: 0 auto 1.25em
+
+// Full-width tables (e.g. Teaching page)
+
+.full th
+  text-align: left
+
+.full td:first-child, .full th:first-child
+  white-space: nowrap

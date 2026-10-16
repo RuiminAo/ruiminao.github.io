@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.15)  24 AUG 2026 16:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.15)  16 OCT 2026 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,25 +290,25 @@ File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 ) (cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-Package hyperref Info: Link coloring OFF on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+Package hyperref Info: Link coloring OFF on input line 26.
  (cv.out) (cv.out)
 \@outlinefile=\write4
 \openout4 = `cv.out'.
@@ -342,14 +342,14 @@ File: fc-english.def 2016/01/12
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
 * v-part:(T,H,B)=(57.81621pt, 679.33757pt, 57.81621pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
+* \textwidth=542.02501pt
 * \textheight=679.33757pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
 * \topmargin=-51.45378pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -368,79 +368,9 @@ File: fc-english.def 2016/01/12
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 44--51
-[]  
- []
-
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 57--61
-[]  
- []
-
-
-Overfull \hbox (9.48906pt too wide) in paragraph at lines 67--74
-[]
- []
-
 [1
 
-{C:/Users/uctpaox/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (1.00812pt too wide) in paragraph at lines 139--139
-[]\T1/cmr/m/n/12 ECON0107| 
- []
-
-
-Overfull \hbox (1.00812pt too wide) in paragraph at lines 141--141
-[]\T1/cmr/m/n/12 ECON0106| 
- []
-
-
-Overfull \hbox (1.00812pt too wide) in paragraph at lines 143--143
-[]\T1/cmr/m/n/12 ECON0108| 
- []
-
-
-Overfull \hbox (1.00812pt too wide) in paragraph at lines 145--145
-[]\T1/cmr/m/n/12 ECON0086| 
- []
-
-
-Overfull \hbox (1.00812pt too wide) in paragraph at lines 147--147
-[]\T1/cmr/m/n/12 ECON0112| 
- []
-
-
-Overfull \hbox (3.28395pt too wide) in paragraph at lines 149--149
-[]\T1/cmr/m/n/12 ECONDEV| 
- []
-
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 138--155
-[]  
- []
-
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 163--174
-[]  
- []
-
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 183--189
-[]  
- []
-
-
-Overfull \hbox (0.71861pt too wide) in paragraph at lines 195--207
-[]  
- []
-
-[2]
-Overfull \hbox (83.4664pt too wide) in paragraph at lines 213--218
-[] 
- []
-
-[3] (cv.aux)
+{C:/Users/uctpaox/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -449,17 +379,17 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10890 strings out of 467691
- 169490 string characters out of 5414019
- 609147 words of memory out of 5000000
- 39801 multiletter control sequences out of 15000+600000
- 639950 words of font info for 64 fonts, out of 8000000 for 9000
+ 10888 strings out of 467691
+ 169462 string characters out of 5414019
+ 610159 words of memory out of 5000000
+ 39800 multiletter control sequences out of 15000+600000
+ 639255 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1105b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc2074.pk><C:/Users/uctpaox/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cv.pdf (3 pages, 101445 bytes).
+ 75i,11n,79p,1689b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1440.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc2074.pk><C:/Users/uctpaox/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on cv.pdf (3 pages, 103937 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
+ 297 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
