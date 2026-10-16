@@ -6,12 +6,11 @@ $line-height: 1.65
 
 @import index, font, basic, layout, classes
 
-html
-  background: lighten($dark, 70%)
-  padding: 0 calc(38% - 22em)
+// Plain white page; content column of at most 1100px, centred
 
-body
-  box-shadow: 0 0 .3em lighten($dark, 65%)
+html
+  background: $light
+  padding: 0 max(0px, calc(50% - 550px))
 
 body > header, body > footer
   background: lighten($dark, 5%)
@@ -19,11 +18,9 @@ body > header, body > footer
 
 @media (min-width: 32em)
   body > header, body > article, body > footer
-    padding: 1.75em calc(22% - 6em)
+    padding: 1.75em 2rem
 
 @media (prefers-color-scheme: dark)
-  body, body > header, body > footer
-    box-shadow: 0 0 0 1px lighten($dark, 8%)
   html, body > header, body > footer
     background: $dark
 
@@ -63,3 +60,14 @@ article li
   width: 260px
   margin: .3em 0 0
   border-radius: 4px
+
+// Narrow windows (phones): photo on top, then the text
+@media (max-width: 44em)
+  .about
+    flex-direction: column
+    gap: 1em
+  .about .profile
+    order: -1
+    width: 220px
+    max-width: 100%
+    margin: 0 0 .5em
