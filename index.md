@@ -5,7 +5,7 @@ title: "Ruimin Ao"
 <div class="about">
 <div class="about-text" markdown="1">
 
-I am a PhD student in the Dept. of Economics at [University College London](https://www.ucl.ac.uk/economics/ucl-department-economics) and [Institute for Fiscal Studies](https://ifs.org.uk/).
+I am a PhD candidate in the Dept. of Economics at [University College London](https://www.ucl.ac.uk/economics/ucl-department-economics) and [Institute for Fiscal Studies](https://ifs.org.uk/).
 
 My research interests are health, development and behavioural economics. I am particularly interested in the health outcomes of individual behaviours.
 
@@ -21,5 +21,10 @@ You can find my CV [here](/cv_102026.pdf).
 Contact me at <a href="mailto:r.ao@ucl.ac.uk">r.ao[at]ucl.ac.uk</a>.
 
 </div>
-<img class="profile" src="/Main_JPG_High_SQ.jpg" alt="Photo of Ruimin Ao">
+<div class="about-side">
+  <img class="profile" src="/Main_JPG_High_SQ.jpg" alt="Photo of Ruimin Ao">
+  <p class="caption1">PhD Candidate in Economics </p>
+  <p class="caption2">Department of Economics </p>
+  <p class="caption2">University College London </p>
+</div>
 </div>

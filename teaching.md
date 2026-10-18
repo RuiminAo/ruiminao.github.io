@@ -1,8 +1,14 @@
 ---
 layout: page
 title: "Teaching"
+
 ---
-## Teaching Assistant, University College London
+## TA Training
+
+- 2026 &nbsp;  Co-organiser for TA training workshop (with [Val&eacute;rie Lechene](https://www.valerielechene.com/)), UCL Economics Department.
+
+---
+## Teaching at University College London
 
 - 2023 – present &nbsp; Topics in Household Economics (BSc)
 - 2021 – 2025 &nbsp; Health Economics (MSc)

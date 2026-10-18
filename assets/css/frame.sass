@@ -97,23 +97,50 @@ article li
   gap: 2.5em
 
 .about-text
-  flex: 1 1 auto
+  flex: 1 1 0
   min-width: 0
 
+// The side column scales with the window: 36% of the row, never narrower
+// than 240px nor wider than 480px. The photo is 60% of the column.
+.about-side
+  flex: 0 0 clamp(240px, 36%, 480px)
+  margin-top: .3em
+  margin-left: 1em
+
 .about .profile
-  flex: 0 0 auto
-  width: 260px
-  margin: .3em 0 0
-  border-radius: 4px
+  display: block
+  width: 80%
+  margin: 0 0 1em
+  border-radius: 8px
+
+.about-side p
+  text-align: left
+
+.about .caption1
+  margin: 0 0 .2em
+  font-size: 1em
+  line-height: 1.5
+  color: reduce(100)
+
+.about .caption2
+  margin: 0 0 .2em
+  font-size: 1em
+  line-height: 1.5
+  color: reduce(95)
 
 // Narrow windows (phones): photo on top, then the text
 @media (max-width: 44em)
   .about
     flex-direction: column
     gap: 1em
-  .about .profile
+  .about-side
     order: -1
     align-self: center
-    width: 220px
-    max-width: 100%
+    flex: 0 0 auto
+    width: min(100%, 280px)
     margin: 0 0 .5em
+    text-align: center
+  .about-side p
+    text-align: center
+  .about .profile
+    width: 100%
