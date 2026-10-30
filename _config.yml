@@ -31,3 +31,6 @@ comments:
 
 plugins:
  - jekyll-feed
+
+exclude:
+  - papers/README.md

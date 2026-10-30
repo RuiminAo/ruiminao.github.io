@@ -19,10 +19,13 @@ This paper examines how new discounter openings affect households’ shopping be
 Draft coming soon!
 
 ---
+Retirement expectation and health investment.
+
+---
 When climate change scrambles food prices, who sacrifices nutrition?
 
 ---
-Health shock and health investment through network
+Health shock and health investment through network.
 
 
 
