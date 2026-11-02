@@ -9,7 +9,7 @@ title: "Research"
 
 E-cigarettes are addictive but less harmful than combustible cigarettes. Taxes on e-cigarettes may discourage vaping, but could increase more harmful cigarette demand through substitution. I study this policy trade-off using a dynamic discrete--continuous model of joint demand. Households choose which products to buy and how much to purchase. Two product-specific addiction stocks link past purchases to current choices and evolve with the quantities consumed. The model is estimated using NielsenIQ household panel data from 2019 to 2024 by maximum likelihood. A surrogate neural network approximates continuation values across states and parameter values, making estimation feasible. Addiction plays a central role in determining how households respond to price chnages, differently on participation and on quantity choices. Cigarettes and e-cigarettes are substitutes: a permanent 1\% increase in the e-cigarette price raises cigarette quantity by 0.22\%. A corresponding increase in the cigarette price raises e-cigarette quantity by 0.27\%. Price responses weaken with addiction, and substitution into vaping comes mainly from heavily addicted smokers. Removing e-cigarettes from the market would raise cigarette consumption by about 11\%, mostly because smokers will consumer more cigarettes. Vapers mostly switch to abstinence rather than to smoking, while dual-users drop vaping and compensate with more cigarettes. Removing cigarettes from the market, however, does not increase vaping substantially as most users switch to abstinence.
 
-Draft coming soon!
+[Latest draft (PDF)](/papers/Ao_JMP.pdf)
 
 ---
 The impact of discount retail stores on household consumption and wellbeing: evidence from the UK
