@@ -16,7 +16,7 @@ In my [**job market paper**](/papers/Ao_JMP.pdf), I study the dynamic choice bet
 
 <br>
 
-You can find my CV [here](/cv_102026.pdf).
+You can find my CV [here](/cv_112026.pdf).
 
 Contact me at <a href="mailto:r.ao@ucl.ac.uk">r.ao[at]ucl.ac.uk</a>.
 

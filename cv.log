@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.15)  3 NOV 2026 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.15)  4 NOV 2026 10:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -389,31 +389,31 @@ Overfull \hbox (0.52974pt too wide) in paragraph at lines 59--63
 [1
 
 {C:/Users/uctpaox/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (0.52974pt too wide) in paragraph at lines 136--141
+Overfull \hbox (0.52974pt too wide) in paragraph at lines 145--150
 []  
  []
 
 
-Overfull \hbox (0.52974pt too wide) in paragraph at lines 173--185
+Overfull \hbox (0.52974pt too wide) in paragraph at lines 182--194
 []  
  []
 
 
-Overfull \hbox (0.52974pt too wide) in paragraph at lines 194--200
+Overfull \hbox (0.52974pt too wide) in paragraph at lines 203--209
 []  
  []
 
 
-Overfull \hbox (0.52974pt too wide) in paragraph at lines 206--218
+Overfull \hbox (0.52974pt too wide) in paragraph at lines 215--227
 []  
  []
 
 
-Overfull \hbox (26.56088pt too wide) in paragraph at lines 224--230
+Overfull \hbox (26.56088pt too wide) in paragraph at lines 233--239
 [] 
  []
 
-[2] (cv.aux)
+[2] [3] (cv.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
@@ -422,17 +422,17 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 11222 strings out of 467691
- 175397 string characters out of 5414019
+ 11223 strings out of 467691
+ 175403 string characters out of 5414019
  617787 words of memory out of 5000000
  40133 multiletter control sequences out of 15000+600000
  639266 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1341b,575s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\uctpaox\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1728.pk><C:/Users/uctpaox/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on cv.pdf (2 pages, 99445 bytes).
+Output written on cv.pdf (3 pages, 100044 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
