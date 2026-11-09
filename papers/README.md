@@ -6,6 +6,7 @@ No Jekyll configuration is involved: anything placed here is copied straight to 
 | File | Public URL |
 |---|---|
 | `Ao_JMP.pdf` | https://ruiminao.com/papers/Ao_JMP.pdf |
+| `Ao_JMP_Slides.pdf` | https://ruiminao.com/papers/Ao_JMP_Slides.pdf (unlisted: not linked from any page) |
 
 ## Updating a paper
 
